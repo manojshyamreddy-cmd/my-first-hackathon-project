@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RentSplit - Rent Affordability Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="java" href="script.js">
+</head>
+
+<body>
+
+    <header>
+        <h1>🏠 RentSplit</h1>
+        <p>Split rent fairly. Know what you can afford.</p>
+    </header>
+
+    <main>
+
+        <section class="calculator">
+            <h2>Rent Affordability Calculator</h2>
+
+            <label>Monthly Rent</label>
+            <input type="number" id="rent" placeholder="₹ Enter rent">
+
+            <label>Monthly Utilities</label>
+            <input type="number" id="utilities" placeholder="₹ Enter utilities">
+
+            <label>Number of Roommates</label>
+            <input type="number" id="roommates" placeholder="Enter number">
+
+            <label>Monthly Income</label>
+            <input type="number" id="income" placeholder="₹ Enter income">
+
+            <label>Maximum Housing Percentage</label>
+            <input type="number" id="percentage" value="30">
+
+            <button onclick="calculateRent()">Calculate</button>
+        </section>
+
+
+        <section class="results">
+            <h2>Your Results</h2>
+
+            <div class="result-box">
+                <h3>Total Housing Cost</h3>
+                <p id="total">₹0</p>
+            </div>
+
+            <div class="result-box">
+                <h3>Cost Per Person</h3>
+                <p id="perPerson">₹0</p>
+            </div>
+
+            <div class="result-box">
+                <h3>Housing Cost %</h3>
+                <p id="housingPercentage">0%</p>
+            </div>
+
+            <div id="message">
+                Enter your details and calculate.
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
